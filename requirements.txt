@@ -22,6 +22,4 @@ azure-mgmt-keyvault==2.2.0
 azure-mgmt-network==10.2.0
 azure-mgmt-resource==10.1.0
 azure-mgmt-storage==11.1.0
-azureml==0.2.7
-azureml-core==1.9.0
 nltk==3.4.5
