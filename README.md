@@ -1,22 +1,14 @@
 ## ML-Model-Flask-Deployment
-This is a Mediclaim Fraud Detection project.
+This is a Disease Prediction project.
 
 ### Prerequisites
-You must have Scikit Learn, Pandas (for Machine Leraning Model) and Flask (for API) installed.
+You must have Scikit Learn, Pandas (for Machine Leraning Model) Flask Azure conginitive services API installed.
 
 ### Project Structure
-This project has four major parts :
-1 Mediclaim Fraud Detection.py - This contains code for our Machine Learning model to detect fraud on mediclaim data based on training data.
-2. app.py - This contains Flask APIs that receives provider details through GUI or API calls, computes the predited value based on our model and returns it.
-3. request.py - This uses requests module to call APIs already defined in app.py and dispalys the returned value.
-4. templates - This folder contains the HTML template to allow user to enter details and displays the claim is fraud or not.
+ app.py - This contains Flask APIs that receives provider details through GUI or API calls, computes the predited value based on our model and returns it.
+ Templates - This folder contains the HTML template to allow user to enter details and displays the claim is fraud or not.
 
 ### Running the project
-1. Ensure that you are in the project home directory. Create the machine learning model by running below command -
-```
-python Mediclaim Fraud Detection.py
-```
-This would create a serialized version of our model into a file model.pkl
 
 2. Run app.py using below command to start Flask API
 ```
