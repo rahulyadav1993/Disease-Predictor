@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<title>Disease Prediction</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--<link rel="stylesheet" href="assets/css/main.css" />-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index_new.html">Disease Prediction</a></h1>
+							<p>BITS PILANI</p>
+
+				
+
+					</div>
+				</section>
+
+			<!-- Features -->
+				<section id="features">
+					<div class="container">
+						<header>
+							<h2>A new way to predict the Disease</h2>
+						</header>
+						<div class="row aln-center">
+
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+									<section>
+									
+									 <form action="{{ url_for('recognize_from_microphone')}}"method="post">
+
+                                            <button type="submit" class="button icon solid fa-file">Tell us your symptoms</button>
+                                    </form>
+									
+										
+										
+										<header>
+											<h3>Voice Based</h3>
+										</header>
+										<p> {{predict_text}}
+									</section>
+
+							</div>
+							<form action="{{ url_for('predict')}}" method="GET">
+
+							<div class="col-4 col-6-medium col-12-small">
+ 
+								<!-- Feature -->
+									<section>
+									
+									<div class="col-12">
+												<input type="text" placeholder="Enter your Symptoms" name="p" id="p">
+											</div>
+									
+									</section>
+
+							</div>
+							
+
+							<div class="col-12">
+								<ul class="actions">
+								           
+                                                <input type="hidden" name="q" id="q" value="{{predict_text}}"> 
+       
+                                
+                                            <br>
+                                            <button type="submit" class="button icon solid fa-file">Predict Disease</button>
+       
+         
+                                
+									
+								</ul>
+							</div>
+							</form>
+						</div>
+					</div>
+				</section>
+
+			<!-- Banner -->
+				<section id="banner">
+					<div class="container">
+						<p> <strong>{{prediction_text}}</strong><br />
+						</p>
+					</div>
+				</section>
+
+	
+
+	
+							</div>
+						</div>
+					</div>
+					<div id="copyright" class="container">
+						<ul class="links">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
