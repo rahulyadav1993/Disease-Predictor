@@ -16,6 +16,7 @@ End_point='https://eastus.api.cognitive.microsoft.com/sts/v1.0/issuetoken'
 
 model_imp = pickle.load(open('disease_prediction.pkl', 'rb'))
 
+
 text=''
 @app.route('/')
 def home():
@@ -151,8 +152,8 @@ def predict():
         return render_template('index.html',prediction_text=text)
     
     except:
-        error_string = "Kindly tell us your disease again"
-        return render_template('index_new.html', prediction_text=error_string)
+        error_string = "Kindly tell us your symptoms again"
+        return render_template('index.html', prediction_text=error_string)
 
 
 if __name__ == "__main__":
