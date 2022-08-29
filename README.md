@@ -10,17 +10,17 @@ You must have Scikit Learn, Pandas (for Machine Leraning Model) Flask Azure cong
 
 ### Running the project
 
-2. Run app.py using below command to start Flask API
+1. Run app.py using below command to start Flask API
 ```
 python app.py
 ```
 By default, flask will run on port 5000.
 
-3. Navigate to URL http://localhost:5000
+2. Navigate to URL http://localhost:5000
 
 
 
-4. You can also send direct POST requests to FLask API using Python's inbuilt request module
+3. You can also send direct POST requests to FLask API using Python's inbuilt request module
 Run the beow command to send the request with some pre-popuated values -
 ```
 python request.py
